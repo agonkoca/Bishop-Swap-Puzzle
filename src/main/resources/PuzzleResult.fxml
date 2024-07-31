@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="puzzle.controllers.PuzzleResultController"
+            prefHeight="400.0" prefWidth="750.0">
+
+    <VBox alignment="CENTER" spacing="10" AnchorPane.topAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.bottomAnchor="0.0">
+        <Label text="Puzzle Result" style="-fx-font-size: 20px;" />
+        <TableView fx:id="resultTable">
+            <columns>
+                <TableColumn text="Player Name" fx:id="playerName" prefWidth="150.0" />
+                <TableColumn text="Solved" fx:id="solved" prefWidth="150.0" />
+                <TableColumn text="Moves" fx:id="moves" prefWidth="150.0" />
+                <TableColumn text="Duration" fx:id="duration" prefWidth="150.0" />
+                <TableColumn text="Created" fx:id="created" prefWidth="150.0" />
+            </columns>
+        </TableView>
+    </VBox>
+</AnchorPane>

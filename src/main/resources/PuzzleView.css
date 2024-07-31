@@ -1,0 +1,4 @@
+.square.selected {
+    -fx-border-width: 5;
+    -fx-border-color: slategray;
+}

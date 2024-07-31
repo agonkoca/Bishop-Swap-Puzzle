@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="puzzle.controllers.PlayerController">
+
+    <VBox fx:id="centerVBox" alignment="CENTER" spacing="10.0">
+        <padding>
+            <Insets top="30" bottom="30" left="30" right="30"/>
+        </padding>
+        <children>
+            <Label text="Enter your name:" />
+            <TextField fx:id="playerNameArea" promptText="Your Name" />
+            <Button text="Play" onAction="#handleStartPuzzle" />
+        </children>
+    </VBox>
+
+</AnchorPane>
